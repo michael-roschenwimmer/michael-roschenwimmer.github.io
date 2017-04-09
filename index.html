@@ -8,48 +8,35 @@
 
 
 <style>
-	body {
 
-		-webkit-animation: colorchange 60s infinite;
-		animation: colorchange 60s infinite;
+.custom {
+	font-family: Courier;
+	color: red;
+}
 
-
-		@-webkit-keyframes colorchange {
-
-			0% {
-				background: #33FFF3;
-			}
-			25% {
-				background: #78281F;
-			}
-			50% {
-				background: #117A65;
-			}
-			75% {
-				background: #DC7633;
-			}
-			100% {
-				background: #9B59B6;
-			}
-		}
+body {
+    -webkit-animation: colorchange 60s infinite;
+    animation: colorchange 60s infinite;
+}
 
 
-		@keyframes colorchange {
-			0% {
-				background: #33FFF3;
-			}
-			25% {
-				background: #78281F;
-			}
-			50% {
-				background: #117A65;
-			}
-			75% {
-				background: #DC7633;
-			}
-			100% {
-				background: #9B59B6;
-			}
+@-webkit-keyframes colorchange {
+
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+
+
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
 		}
 	}
 </style>
@@ -61,7 +48,7 @@
 		</div>
 		<div id="content">
 			<div class="post">
-				<h1>Q: What is <str‘void’ in a method declaration</str>? How does this differ from declaring a method with a return type?</h1>
+				<h1>Q: What is <str‘void’ in a method declaration</str> How does this differ from declaring a method with a return type?</h1>
 			<p class="custom">1) Void within the code ‘public static void main(String[] args) {}’ literally means that the method itself (that line of co</p>
 			<p class="custom">de) has no return value. If you were to compile and run that code with nothing in between the code block then there would be</p>
 			<p class="custom">no output returned to the display. On the other hand, if you were to declare a method with a return type then you wouldn’t u</p>
