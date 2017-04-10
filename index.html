@@ -72,14 +72,16 @@
 			<div class="post">
 				<h1>Q: What is ‘void’ in a method declaration How does this differ from declaring a method with a return type?</h1>
 			<p class="custom">1) 'void' within the code ‘public static void main(String[] args) {}’ literally means that the method itself (that line of code) has no return value. If you were to compile and run that code with nothing in between the code block then there would be
-				no output returned to the display. On the other hand, if you were to declare a method with a return type then you wouldn’t u se void and might use int or something else which would have a return value.</p>
+				no output returned to the display. On the other hand, if you were to declare a method with a return type then you wouldn’t use void and might use int or something else which would have a return value.</p>
 		</div>
 		<div class="post">
 			<h1>Q: When would you use ‘=’ vs ‘==’ vs ‘.equals’? Explain what each of these does and in which cases you should use them.</h1>
 			<p class="custom">2) How would you use ‘=‘, ‘==‘, and .equals? Well, ‘=‘ is used to assign a value to a variable. If you were to use ‘==‘ instead of ‘=‘ it wouldn’t work because it would be comparing the two, not assigning a value to the variable.
 				<p class="custom">An example of how to use ‘=‘ to assign a value to a variable is as follows:</p>
 				<p class="custom"> myAge = 30; Now, whenever I would invoke myAge it would be tied to the value 30. For example, if I were to use System.out.println(“I’m “ + myAge + “.”); —— It would display “I’m 30.”</P>
-				<p class="custom">You would use ‘==‘ in order to compare integers, chars, and booleans, etc. For example: 4 == 5 The above integers would be compared and the statement would be determined to be false. It also would not assign the value 5 to 4 because in this case 4
+				<p class="custom">You would use ‘==‘ in order to compare integers, chars, and booleans, etc.,</p>
+							<p class="custom">For example: 4 == 5</p>
+							<p class="custom">The above integers would be compared and the statement would be determined to be false. It also would not assign the value 5 to 4 because in this case 4
 					is not being used as a variable as the previous example. Finally, you would use ‘.equals’ to verify to see if two Strings have the same value.</p>
 				<p class="custom">If you were to use ‘==‘ then you would not be able to verify if they had the same value properly as it would return false. For example, it’s true that: </p>
 				<p class="custom">String slacker = “Fred”; String slacker has the same output value as String worker. String worker = “Fred”;</p>
@@ -88,7 +90,11 @@
 		<div class="post">
 			<h1>Q: What happens when you include ‘import java.util.Scanner;’ in your code? Where does this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?</h1>
 			<p class="custom">3) When you ‘import.java.util.Scanner’ into your code you create the ability to utilize a text scanner that is able to derive information from user input by typing something like this into code:</p>
-			<p class="custom">Scanner kb = new Scanner(System.in); if(kb != null) {System.out.print("Please enter your text here: "); String yourText = kb.next();</p>
+			<p class="custom">Scanner kb = new Scanner(System.in);</p>
+						<p class="custom">if(kb != null) {</p>
+							<p class="custom">System.out.print("Please enter your text here: "); </p>
+							<p class="custom">String yourText = kb.next();</p> 
+						<p class="custom">}</p>
 			<p class="custom">The code above would derive any user input after being prompted by the machine and assign it to the variable ‘yourText’. The function comes from Java legacy code as it is one of the utilities (tools) inherent within the language.</p>
 
 
